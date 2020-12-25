@@ -2,19 +2,20 @@
 
 namespace SmcAppi\Configs;
 
-class Config{
+use SmcAppi\Interfaces\ThrowableInterface;
+
+class Config
+{
 
     var $version = '1.0.0';
-    
-    public function loadFile($file){
+
+    public function loadFile($file)
+    {
 
         try {
             require_once $file;
-        } catch (\Throwable $th) {
+        } catch (ThrowableInterface $th) {
             throw $th;
         }
-
-
-        
     }
 }
