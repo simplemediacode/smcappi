@@ -1,0 +1,20 @@
+{
+    "name": "simplemediacode/smcappi",
+    "type": "library",
+    "require": {
+        "php": "~7.4|~8.0"
+    },
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "rolandinsh",
+            "email": "rolands@mediabox.lv"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SmcAppi": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
