@@ -11,7 +11,6 @@ class Config
 
     public function loadFile($file)
     {
-
         try {
             require_once $file;
         } catch (ThrowableInterface $th) {

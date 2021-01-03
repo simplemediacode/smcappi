@@ -2,12 +2,9 @@
 
 namespace SmcAppi;
 
-use SmcAppi\Configs\Config;
-
 class SmcAppi
 {
     var $version;
-    var $configs;
 
     public function __construct()
     {
@@ -16,5 +13,9 @@ class SmcAppi
     public function version()
     {
         return '0.1.0';
+    }
+    public function thhashit($text)
+    {
+        return hash('gost', $text);
     }
 }
